@@ -8,8 +8,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<!-- Our SkipLink - pra acessibilidade -->
+	<a hred="#mainContent" class="skipLink">Skip to main content</a> <!-- this should always be here on the top of the page, every page -->
 
-	
 	<!-- Our nav!!! -->
 	<nav>
 		<!-- A wrapper to contain our content -->
@@ -59,6 +60,51 @@
 				<a href="#">Shop All</a> <!-- it´s an anchor tag (and not a button) because it takes you somewhere, another page, the product page X a button does an action -->
 			</div>
 		</header>
+
+		<!-- Our Main Content Area -->
+		<main id="mainContent">
+			<!-- Categories Section! -->
+			<section class="categories" id="categories">
+				<div class="wrapper">
+					<h2>Categories</h2>
+					<p>Explore our rane of hand-made toys</p>
+				</div>
+
+				<!-- Our Gallery -->
+					<!-- o emmit pro abaixo é o seguinte: ul.categoryGallery>li..items.item$*4>a>img+h4+p -->
+				<ul class="categoryGallery">
+					<li class="items item1">
+						<a href="#">
+							<img src="./assets/safari-trio.jpg" alt="hand carved safari animal toys">
+							<h4>Safari</h4>
+							<p>Land-dwelling African favourites</p>
+						</a>
+					</li>
+					<li class="items item2">
+						<a href="#">
+							<img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed animal toys">
+							<h4>Ocean</h4>
+							<p>Adorable Acquatic Characters</p>
+						</a>
+					</li>
+					<li class="items item3">
+						<a href="#">
+							<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
+							<h4>Dinos</h4>
+							<p>Meet these Prehistoric Pals</p>
+						</a>
+					</li>
+					<li class="items item4">
+						<a href="#">
+							<img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
+							<h4>Sale</h4>
+							<p>Act quickly and grav these bargains</p>
+						</a>
+					</li>
+				</ul>
+
+			</section>
+		</main>
 
 </body>
 </html>
