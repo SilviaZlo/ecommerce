@@ -14,3 +14,60 @@ _nav.scss
         left: 0;
     }
 }
+
+// NAV BAR
+.navBar{
+    position: sticky;
+    top: 0; // to tell the element where to stick to. it will stick __ away from the top (in this case, zero).
+    z-index: 10;
+    border-bottom: 1px solid rgba (8, 75, 109, 0.08);
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}
+
+.searchCart{
+    display: flex;
+    gap: 15px;
+}
+
+.conter {
+    p {
+        background-color: $primary;
+    }
+}
+
+
+// Slide Out Nav!!
+.slideOutNav {
+    height: 100vh;
+    z-index: 20;     // 2 because we already have a z-index of 10 prior to this one;
+    background-color: $primary; 
+    color: solid white;
+    width: 100%;
+    max-width: 500px;
+    position: fixed;     // we dont use position absolute because it would remain at the top even when we scroll (? foi essa a razao q ele deu mesmo?)
+    top: 0;
+    // left: - 500px;
+    padding: 35px 50px;
+
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        
+        button {
+            padding: 10px 0 10px 20px;
+        }
+    }
+}
+
+    // display: none;
+    // color: #fff;
+    // width: 24px;
+    // height: 24px;
+    // border-radius: 50%;
+    // text-align: center;
+}
