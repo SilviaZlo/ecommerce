@@ -1,19 +1,24 @@
 header {
-    background-color: $terciary;
+    background-color: $tertiary;
     margin-bottom: 90px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .headerImgContainer {
-        width: 45%; 
+        width: 45%;
     }
 
-        img {
-            max-width: 100%;
-            display: block; // setting display to block because default display for img is inline and we want to avoid ghost spaces - around 19h43 of the class
-        }
+    .headerContent {
+        width: 55%;
+        color: $primary;
 
-        .headerContent {
-            
+        .contentContainer {
+            width: 65%;
+            margin: 0 auto;
         }
-}
+    }
+} 
+        
+
+    
