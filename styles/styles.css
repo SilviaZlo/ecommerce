@@ -455,6 +455,59 @@ _nav.scss .skipLink:focus {
   gap: 15px;
 }
 
-.conter p {
+.container p {
   background-color: #084b6d;
+}
+
+.slideOutNav {
+  height: 100vh;
+  z-index: 20;
+  color: solid white;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  padding: 35px 50px;
+}
+.slideOutNav .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slideOutNav .buttonContainer button {
+  padding: 10px 0 10px 20px;
+}
+
+.footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px;
+}
+.footer .footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav a {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footerNav a:hover, .footer .footerNav a:focus {
+  color: white;
 }

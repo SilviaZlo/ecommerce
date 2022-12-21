@@ -1,0 +1,19 @@
+header {
+    background-color: $terciary;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+
+    .headerImgContainer {
+        width: 45%; 
+    }
+
+        img {
+            max-width: 100%;
+            display: block; // setting display to block because default display for img is inline and we want to avoid ghost spaces - around 19h43 of the class
+        }
+
+        .headerContent {
+            
+        }
+}

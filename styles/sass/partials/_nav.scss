@@ -34,7 +34,7 @@ _nav.scss
     gap: 15px;
 }
 
-.conter {
+.container {
     p {
         background-color: $primary;
     }
@@ -45,7 +45,7 @@ _nav.scss
 .slideOutNav {
     height: 100vh;
     z-index: 20;     // 2 because we already have a z-index of 10 prior to this one;
-    background-color: $primary; 
+    // background-color: $primary; 
     color: solid white;
     width: 100%;
     max-width: 500px;
@@ -70,4 +70,3 @@ _nav.scss
     // height: 24px;
     // border-radius: 50%;
     // text-align: center;
-}
