@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* site fonts */
 /* site colours */
 /* import Jakarta Sans font */
@@ -326,6 +331,71 @@ a {
   transition: 0.3s;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+button {
+  color: #084b6d;
+  background-color: transparent;
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #084b6d;
+  color: #fff;
+}
+button:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+button.secondary {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  padding: 8px 12px;
+}
+button.secondary:hover {
+  background-color: #fff;
+  color: #084b6d;
+}
+button.secondary:focus {
+  background-color: #fff;
+  color: #084b6d;
+}
+button.solid {
+  color: #fff;
+  background-color: #084b6d;
+}
+button.solid:hover {
+  color: #084b6d;
+  background-color: #fff;
+}
+button.solid:focus {
+  color: #084b6d;
+  background-color: #fff;
+}
+button.menuIcon {
+  border: none;
+  padding: 0;
+  display: inherit;
+}
+button.menuIcon:hover {
+  background-color: transparent;
+}
+button.menuIcon:focus {
+  background-color: transparent;
+}
+
 a.button {
   color: #084b6d;
   background-color: transparent;
@@ -386,6 +456,7 @@ _nav.scss .skipLink:focus {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba 8, 75, 109, 0.08;
+  background-color: #fff;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -397,6 +468,7 @@ _nav.scss .skipLink:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 .searchCart {
@@ -406,8 +478,37 @@ _nav.scss .skipLink:focus {
   gap: 15px;
 }
 
-.container p {
+.counter p {
   background-color: #084b6d;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.slideOutNav {
+  height: 100vh;
+  z-index: 20;
+  background-color: #084b6d;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  padding: 35px 50px;
+}
+.slideOutNav .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slideOutNav .buttonContainer button {
+  padding: 10px 0 10px 20px;
 }
 
 .slideOutNav {

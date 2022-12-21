@@ -21,11 +21,13 @@ _nav.scss
     top: 0; // to tell the element where to stick to. it will stick __ away from the top (in this case, zero).
     z-index: 10;
     border-bottom: 1px solid rgba (8, 75, 109, 0.08);
+    background-color: $solidWhite;
     
     .wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center; 
+        padding: 20px 0;
     }
 }
 
@@ -34,12 +36,39 @@ _nav.scss
     gap: 15px;
 }
 
-.container {
+.counter {
     p {
         background-color: $primary;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        text-align: center;
     }
 }
 
+// Slide Out Nav!!
+.slideOutNav {
+    height: 100vh;
+    z-index: 20;
+    background-color: $primary;
+    color: $solidWhite;
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    padding: 35px 50px;
+
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            padding: 10px 0 10px 20px;
+        }
+    }
+}
 
 // Slide Out Nav!!
 .slideOutNav {
@@ -64,9 +93,4 @@ _nav.scss
     }
 }
 
-    // display: none;
-    // color: #fff;
-    // width: 24px;
-    // height: 24px;
-    // border-radius: 50%;
-    // text-align: center;
+    //
